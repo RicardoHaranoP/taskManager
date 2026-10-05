@@ -53,20 +53,6 @@ Envie `POST http://localhost:8080/tasks` com `Content-Type: application/json`:
 
 O título é obrigatório e deve conter entre 3 e 100 caracteres. A descrição é opcional e aceita até 200 caracteres. A resposta inclui o UUID gerado e o status inicial `PENDING`.
 
-Exemplo no PowerShell:
-
-```powershell
-$body = @{
-  title = "Estudar Spring Boot"
-  description = "Revisar controllers e validação"
-} | ConvertTo-Json
-
-Invoke-RestMethod -Uri "http://localhost:8080/tasks" `
-  -Method Post `
-  -ContentType "application/json" `
-  -Body $body
-```
-
 ### Buscar tarefa por ID
 
 Use o UUID retornado ao criar a tarefa:

@@ -1,0 +1,3 @@
+org\yourcompany\yourproject\infrastructure\repository\InMemoryTaskRepositoryTest.class
+org\yourcompany\yourproject\application\CreateTaskUseCaseTest.class
+org\yourcompany\yourproject\infrastructure\repository\TaskRepositoryTest.class
